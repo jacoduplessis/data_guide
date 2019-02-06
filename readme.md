@@ -6,7 +6,6 @@
 - how much time available for exploration
 - how should final results be exported
 
-
 ## overview of data sources
 
 - how many files
@@ -17,7 +16,6 @@
 - importable
 - level of cleaning required
 - spreadsheets: multiple sheets
-
 
 ## general data quality
 
@@ -40,16 +38,17 @@
 ### field completeness
 
 - what percentage of rows have a non-empty value
+- placeholder values
 
 ### field quality
 
 - format errors
 - spelling and typing mistakes
-- placeholder values
 
 ### field usefulness
 
 - can this field be used in answering one of the questions required
+- is the meaning of values clear from the column name
 
 ##### id fields
 
@@ -60,14 +59,16 @@
 
 - min, max, avg
 - distribution
+- units of measurement
 
 ##### categorical fields
 
-- nominal: no inherent order
-- ordinal: order important
+- nominal: no inherent order (categories)
+- ordinal: order important (very poor, bad, fair, good, perfect)
 - number of distinct values
 - fixed, or may change in future
 - distribution (counts grouped by)
+- identify numeric fields that can be aggregated over
 
 ##### text fields
 
@@ -194,6 +195,10 @@ obvious interpretation clear.
 - github pages
 - rsync to server with nginx
 
+
+## general
+
+- always rename columns to lower snake case: "Functional Location" -> "functional_location"
 
 ## reading material
 
