@@ -28,6 +28,8 @@
 - validity: conformation to business rules, formats, standards
 - credibility: data reasonable
 - staleness: age of data
+- cleanliness: naming consistency, clear and valid names, calculated fields
+
 
 ## overview of data fields
 
@@ -112,6 +114,10 @@
 - clean once, several analysts can connect to server (postgres)
 - window functions
 
+#### limitation
+
+- cannot perform statistical or computational calculations
+
 #### options
 
 - sqlite
@@ -134,6 +140,10 @@
 - need to move data from and to excel files
 - list libraries used in `requirements.txt`
 
+#### limitation
+
+- data needs to fit into memory
+
 #### options
 
 - pandas
@@ -144,6 +154,15 @@
 - altair
 - bokeh
 - seaborn
+
+
+### combining database and pandas
+
+See https://news.ycombinator.com/item?id=19150543
+
+Basically, use SQL as an to create initial filter and extract the subset of data required
+for further computational processing. Then load than into pandas.
+
 
 ## frontend
 
@@ -202,5 +221,11 @@ obvious interpretation clear.
 
 ## reading material
 
-TODO
+- What is a DataFrame? (SQL & Pandas) https://www.oilshell.org/blog/2018/11/30.html
+
+## quotes
+
+"information only has value once it is used" - Stander (2015)
+
+
 
