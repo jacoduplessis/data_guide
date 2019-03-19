@@ -227,5 +227,22 @@ obvious interpretation clear.
 
 "information only has value once it is used" - Stander (2015)
 
+## naming conventions
+
+### database indexes
+
+`pk` for primary keys
+
+`uk` for unique keys
+
+`ix` for non clustered non unique indexes
+
+`ux` for unique indexes
+
+`cx` for nonunique clustered indexes 
+
+ `<type code>_<table name>_<column 1>_<column 2>_<column n>`
+
+Example: `ux_users_username` or `ix_events_time_created`
 
 
