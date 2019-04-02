@@ -222,6 +222,8 @@ obvious interpretation clear.
 ## reading material
 
 - What is a DataFrame? (SQL & Pandas) https://www.oilshell.org/blog/2018/11/30.html
+- Mistakes made with Data Visualization https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368
+
 
 ## quotes
 
